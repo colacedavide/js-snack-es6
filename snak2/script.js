@@ -32,7 +32,25 @@ const squadre = [
 
 ]
 
-function Random(array){
-    
-
+for (let i = 0; i < squadre.length; i++) {
+    squadre[i].punti = Math.floor(Math.random()*10) ;  //generiamo un  numero intero tra 0 e 100
 }
+
+for (let i = 0; i < squadre.length; i++) {
+    squadre[i].falli = Math.floor(Math.random()*6) ;  //generiamo un  numero intero tra 0 e 100
+}
+ const array = [];
+
+//ciclo
+
+ for(let i = 0; i < squadre.length; i++){
+    
+    const punti = {
+        'name': squadre[i].nome ,  
+        'falli' : squadre[i].falli 
+    };
+    //pusho il nuovo oggetto nell'array
+    array.push(punti);
+}
+//Output
+console.log(array);
