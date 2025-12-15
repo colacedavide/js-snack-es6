@@ -48,9 +48,11 @@ for (let i = 0; i < squadre.length; i++) {
     const punti = {
         'name': squadre[i].nome ,  
         'falli' : squadre[i].falli 
+        
+        
     };
-    //pusho il nuovo oggetto nell'array
-    array.push(punti);
+    
+   array.push(punti);
 }
-//Output
+
 console.log(array);
